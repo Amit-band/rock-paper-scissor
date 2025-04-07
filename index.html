@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gamegrid</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-mode">
+  <h1>Rock Paper Scissors</h1>
+
+<!-- Place this anywhere OUTSIDE the round-input-container div -->
+<button id="theme-toggle">Toggle Theme</button>
+
+<div id="round-input-container">
+    <input type="number" id="round-input" placeholder="Enter rounds (leave blank for infinite)">
+    <button id="round-btn">Start Game</button>
+</div>
+
+
+
+  <div class="choices">
+    <div class="choice" id="rock">
+      <img src="./images/rock.jpg" alt="image not working" />
+    </div>
+    <div class="choice" id="paper">
+      <img src="./images/paper.jpg" alt="image not working" />
+    </div>
+    <div class="choice" id="scissor">
+      <img src="./images/Scissor.jpg" alt="image not working" />
+    </div>
+  </div>
+
+  <div class="score-board">
+    <div class="score">
+      <p id="user-score">0</p>
+      <p id="user">You</p>
+    </div>
+    <div class="score">
+      <p id="comp-score">0</p>
+      <p id="comp">Comp</p>
+    </div>
+  </div>
+
+  <div class="msg-container">
+    <p class="msg">Set rounds and press Start</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
